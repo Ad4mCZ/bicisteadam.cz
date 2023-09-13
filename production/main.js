@@ -1,16 +1,6 @@
-if (
-  localStorage.theme === "dark" ||
-  (!("theme" in localStorage) &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches)
-) {
-  document.documentElement.classList.add("dark");
-} else {
-  document.documentElement.classList.remove("dark");
-}
-
 const switchToggle = document.querySelector("#switch-toggle");
 const html = document.querySelector("html");
-let isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+let isDarkMode = false;
 const localDarkMode = JSON.parse(localStorage.getItem("isDarkMode"));
 const darkIcon =
   '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';

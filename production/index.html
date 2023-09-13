@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
-    <script src="theme.js"></script>
+    <link href="build.css" rel="stylesheet" />
   </head>
   <body
     class="bg-base text-text transition-colors duration-300 dark:bg-dark_base dark:text-dark_text"
@@ -108,12 +107,55 @@
           >
         </div>
       </nav>
-      <div class="mx-auto py-8">
+      <div class="mx-auto lg:grid lg:grid-cols-2">
         <div class="mx-auto my-auto items-center justify-center">
-          <img src="/img/WIP.png" alt="WIP" srcset="" class="mx-auto my-auto" />
+          <img
+            src="/img/developer.svg"
+            alt="WIP"
+            srcset=""
+            class="mx-auto my-auto"
+          />
+        </div>
+        <div class="my-auto flex flex-1 items-center text-center lg:text-left">
+          <div class="mx-auto my-auto">
+            <h1 class="py-4 text-6xl">About me</h1>
+            <p class="px-6 py-2 text-xl lg:px-0">
+              Welcome to my page, my name is Adam, I am 21 years old and I study
+              Telecommunication at Brno University of Technology.
+            </p>
+            <p class="px-6 py-2 text-xl lg:px-0">
+              My main field is telecommunication but lately I have been playing
+              with docker and linux.
+            </p>
+            <p class="px-6 py-2 text-xl lg:px-0">
+              I also enjoy learning about and solving any IT related problems!
+            </p>
+            <h1 class="py-4 text-6xl">Skills</h1>
+            <p class="px-6 py-2 text-xl lg:px-0">
+              <span class="font-bold">Languages:</span> C#, C, HTML, CSS,
+              Python, PHP
+            </p>
+            <p class="px-6 py-2 text-xl lg:px-0">
+              <span class="font-bold">Tools:</span> VS Code, Visual Studio,
+              Adobe XD, Docker, Virtualization
+            </p>
+            <p class="px-6 py-2 text-xl lg:px-0">
+              <span class="font-bold">Others:</span> MySQL, phpMyAdmin, Tailwind
+              CSS, Bootstrap
+            </p>
+            <h1 class="py-4 text-6xl">Setup</h1>
+            <h2 class="py-2 text-4xl">Operating Systems</h2>
+            <p class="px-6 py-2 text-xl lg:px-0">
+              Fedora KDE spin and sometimes Windows 10/11 for work.
+            </p>
+            <h2 class="py-2 text-4xl">Hardware</h2>
+            <p class="px-6 py-2 pb-4 text-xl lg:px-0 lg:pb-0">
+              Desktop PC and laptop used as a server.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <script src="main.js"></script>
   </body>
+  <script src="main.js"></script>
 </html>
